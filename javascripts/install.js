@@ -3160,7 +3160,7 @@ FAE.quota = FAE.step.length;
 // proceed to and execute the next step in the installation
 FAE.next = function() {
   if (++FAE.index >= FAE.quota) {
-    FAE.log('Installation of Forumactif Edge has been completed successfully!', 'color:#8B5;font-weight:bold;');
+    FAE.log('Installation of Geek Fourm has been completed successfully!', 'color:#8B5;font-weight:bold;');
     FAE.log('When you\'re finished, please <a href="javascript:window.location.reload();">click here</a> to reload the page and experience your forum in a whole new way!');
 
   } else {
