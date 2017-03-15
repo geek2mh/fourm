@@ -10,7 +10,7 @@
 
 */
 
-FAE.update_tag = 'https://github.com/SethClydesdale/forumactif-edge/releases/tag/v1.1.5';
+FAE.update_tag = 'https://github.com/geek2mh/fourm/releases/tag/v1.1.5';
 
 // General Updates
 FAE.update_step = [
@@ -49,7 +49,7 @@ if (FAE.board_lang == 'Dutch') {
     {
       info : 'Getting old Dutch translation',
       type : 'GET',
-       url : 'https://raw.githubusercontent.com/SethClydesdale/forumactif-edge/v1.1.4/lang/Dutch.js',
+       url : 'https://raw.githubusercontent.com/geek2mh/fourm/v1.1.4/lang/Dutch.js',
       func : function(d) {
         FAE.script(d.replace('FAE.lang', 'FAE.lang_current'));
       }
@@ -58,7 +58,7 @@ if (FAE.board_lang == 'Dutch') {
     {
       info : 'Getting new Dutch translation',
       type : 'GET',
-       url : 'https://raw.githubusercontent.com/SethClydesdale/forumactif-edge/master/lang/Dutch.js',
+       url : 'https://raw.githubusercontent.com/geek2mh/fourm/master/lang/Dutch.js',
       func : function(d) {
         FAE.script(d.replace('FAE.lang', 'FAE.lang_new'));
       }
@@ -93,7 +93,7 @@ if (FAE.board_lang == 'العربية') {
     {
       info : 'Getting old Arabic translation',
       type : 'GET',
-       url : 'https://raw.githubusercontent.com/SethClydesdale/forumactif-edge/v1.1.4/lang/Arabic.js',
+       url : 'https://raw.githubusercontent.com/geek2mh/fourm/v1.1.4/lang/Arabic.js',
       func : function(d) {
         FAE.script(d.replace('FAE.lang', 'FAE.lang_current'));
       }
@@ -102,7 +102,7 @@ if (FAE.board_lang == 'العربية') {
     {
       info : 'Getting new Arabic translation',
       type : 'GET',
-       url : 'https://raw.githubusercontent.com/SethClydesdale/forumactif-edge/master/lang/Arabic.js',
+       url : 'https://raw.githubusercontent.com/geek2mh/fourm/master/lang/Arabic.js',
       func : function(d) {
         FAE.script(d.replace('FAE.lang', 'FAE.lang_new'));
       }
