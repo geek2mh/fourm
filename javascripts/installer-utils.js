@@ -3,7 +3,7 @@
     window.FAE = new Object();
   }
 
-  FAE.raw = 'https://raw.githubusercontent.com/SethClydesdale/forumactif-edge/master/';
+  FAE.raw = 'https://raw.githubusercontent.com/geek2mh/fourm/master/';
   FAE.eGIF = 'http://illiweb.com/fa/empty.gif';
   FAE.delay = 1000;
   FAE.cp_lang = {};
@@ -57,7 +57,7 @@
   // get update files and combine their steps into one array for consecutive execution
   FAE.getUpdates = function() {
     if (++FAE.update_index >= FAE.update_quota) {
-      FAE.log(FAE.cp_lang.fae_update_start || 'Updates are about to begin, please do not close this tab.');
+      FAE.log(FAE.cp_lang.fae_update_start || 'Updates are about to begin, سبحان الله وبحمده سبحان الله العظيم . ');
 
       // get the update utilities and begin the update process
       $.get(FAE.raw + 'updates/utils.js', function(d) {
@@ -89,7 +89,7 @@
         FAE.log(FAE.cp_lang.fae_update_error ? FAE.parse_vars(FAE.cp_lang.fae_update_error, {
           '{VERSION_STRING}' : FAE.update_queue[FAE.update_index]
 
-        }) : 'Update instructions for version ' + FAE.update_queue[FAE.update_index] + ' could not be found. Please <a href="http://fmdesign.forumotion.com/t700-forumactif-edge-support#13923" target="_blank">open a new issue</a> and provide this information for further assistance.', 'color:#E53;font-weight:bold;');
+        }) : 'Update instructions for version ' + FAE.update_queue[FAE.update_index] + ' ERROR ', 'color:#E53;font-weight:bold;');
 
         FAE.getUpdates();
       });
@@ -119,7 +119,7 @@
       // this check is mainly for forums that have the security option "Confirm password to administration access" enabled
       $.get('/admin/index.forum', function(d) {
         if (!$('#page-body > #tabs', d)[0]) {
-          FAE.log('Error : You have not logged into your <a href="/admin/index.forum">administration panel</a>. Please log in so that you can use the FAE Control Panel. <a href="https://github.com/SethClydesdale/forumactif-edge/wiki/Frequently-Asked-Questions#wiki-wrapper" target="_blank" style="font-weight:normal;"><em>(What is this?)</em></a>', 'color:#E53;font-weight:bold;');
+          FAE.log('Error : You have not logged into your <a href="/admin/index.forum">administration panel</a>. Please log in so that you can use the Geek Control Panel. <a href="https://github.com/geek2mh/fourm/wiki/Frequently-Asked-Questions#wiki-wrapper" target="_blank" style="font-weight:normal;"><em>(What is this?)</em></a>', 'color:#E53;font-weight:bold;');
           document.getElementById('fae_options').style.display = 'none';
         }
       });
@@ -130,7 +130,7 @@
         if (confirm( (FAE.cp_lang.fae_install_warning ? FAE.parse_vars(FAE.cp_lang.fae_install_warning, {
           '{INSTALL}' : installed ?  FAE.cp_lang.fae_reinstall : FAE.cp_lang.fae_install
 
-        }) : 'Are you sure you want to ' + ( installed ? 're' : '' ) + 'install Forumactif Edge? This will overwrite your current theme and delete your current JavaScripts. \\\n\\\nPlease make sure to backup all your personal content files such as CSS, Templates, and JavaScripts before proceeding. Click "Cancel" if you\'re not ready to install Forumactif Edge.').replace(/\\/g, '') )) {
+        }) : 'Are you sure you want to ' + ( installed ? 're' : '' ) + 'install Geek Style? This will overwrite your current theme and delete your current JavaScripts. \\\n\\\nPlease make sure to backup all your personal content files such as CSS, Templates, and JavaScripts before proceeding. Click "Cancel" if you\'re not ready to install Geek Style.').replace(/\\/g, '') )) {
 
           $.get(FAE.raw + 'javascripts/install.js', function(d) {
             FAE.script(d);
@@ -152,7 +152,7 @@
 
         // Uninstallation initialization
         uninstall.onclick = function() {
-          if (confirm( (FAE.cp_lang.fae_uninstall_warning || 'Are you sure you want to uninstall Forumactif Edge? All CSS, JavaScript, and Template changes will be deleted ; The forum will be reverted to the default phpbb3 theme. \\\n\\\nPlease make sure to backup all your personal content files such as CSS, Templates, and JavaScripts before proceeding. Click "Cancel" if you don\'t want to uninstall Forumactif Edge yet.').replace(/\\/g, '') )) {
+          if (confirm( (FAE.cp_lang.fae_uninstall_warning || 'Are you sure you want to uninstall Geek Style? All CSS, JavaScript, and Template changes will be deleted ; The forum will be reverted to the default phpbb3 theme. \\\n\\\nPlease make sure to backup all your personal content files such as CSS, Templates, and JavaScripts before proceeding. Click "Cancel" if you don\'t want to uninstall Geek Style yet.').replace(/\\/g, '') )) {
 
             $.get(FAE.raw + 'javascripts/uninstall.js', function(d) {
               FAE.script(d);
@@ -733,7 +733,7 @@
       }
 
     } else if (/page_html\?mode=preview/.test(window.location.href)) {
-      FAE.log(FAE.cp_lang.fae_err_no_preview || 'The Forumactif Edge Control Panel cannot be used in preview mode. Please go to Admin Panel > Modules > HTML pages management and click the magnifying glass (<img src="http://illiweb.com/fa/admin/icones/voir.png" style="vertical-align:middle;"/>) for this page once you\'ve saved it.', 'color:#E53;font-weight:bold;');
+      FAE.log(FAE.cp_lang.fae_err_no_preview || 'The Geek Control Panel cannot be used in preview mode. Please go to Admin Panel > Modules > HTML pages management and click the magnifying glass (<img src="http://illiweb.com/fa/admin/icones/voir.png" style="vertical-align:middle;"/>) for this page once you\'ve saved it.', 'color:#E53;font-weight:bold;');
 
     } else {
       FAE.log(FAE.cp_lang.fae_err_not_founder || 'Only <a href="/u1">the founder</a> may use this control panel. Please contact them for assistance in installing Forumactif Edge.', 'color:#E53;font-weight:bold;');
@@ -741,7 +741,7 @@
   });
 
   // help link
-  $('#fae_cp').append('<div style="margin-top:12px"><a href="https://github.com/SethClydesdale/forumactif-edge/wiki/FAE-Control-Panel-Guide" target="_blank" style="float:right;"><strong id="fae_cp_help">Help!</strong></a><div class="clear"></div></div>');
+  $('#fae_cp').append('<div style="margin-top:12px"><a href="https://github.com/geek2mh/fourm/wiki/FAE-Control-Panel-Guide" target="_blank" style="float:right;"><strong id="fae_cp_help">Help!</strong></a><div class="clear"></div></div>');
 
   // extra cp stylesheet
   $('head').append(
