@@ -9,7 +9,7 @@
 
 */
 
-FAE.update_tag = 'https://github.com/SethClydesdale/forumactif-edge/releases/tag/v1.1.6';
+FAE.update_tag = 'https://github.com/geek2mh/fourm/releases/tag/v1.1.6';
 FAE.RTL = (FAE.board_lang == 'العربية' || FAE.board_lang == 'עברית') ? true : false;
 
 // General Updates
