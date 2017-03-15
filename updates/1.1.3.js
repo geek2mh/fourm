@@ -10,7 +10,7 @@
 
 */
 
-FAE.update_tag = 'https://github.com/SethClydesdale/forumactif-edge/releases/tag/v1.1.3';
+FAE.update_tag = 'https://github.com/geek2mh/fourm/releases/tag/v1.1.3';
 
 // General Updates
 FAE.update_step = [
