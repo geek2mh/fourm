@@ -99,7 +99,7 @@ FAE.quota = FAE.step.length;
 // proceed to and execute the next step update instruction
 FAE.next = function() {
   if (++FAE.index >= FAE.quota) {
-    FAE.log('Forumactif Edge has been updated successfully!', 'color:#8B5;font-weight:bold;');
+    FAE.log('Geek fourm has been updated successfully!', 'color:#8B5;font-weight:bold;');
     FAE.log('When you\'re finished, please <a href="javascript:window.location.reload();">click here</a> to reload the page.');
 
   } else {
