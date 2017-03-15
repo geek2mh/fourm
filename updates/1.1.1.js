@@ -10,7 +10,7 @@
 
 */
 
-FAE.update_tag = 'https://github.com/SethClydesdale/forumactif-edge/releases/tag/v1.1.1';
+FAE.update_tag = 'https://github.com/geek2mh/fourm/releases/tag/v1.1.1';
 
 // General Updates
 FAE.update_step = [
@@ -73,7 +73,7 @@ if (FAE.board_lang == 'Deutsch') {
                        title : '[FA EDGE] ALL.JS',
             'js_placement[]' : 'allpages',
                      content : form.content.value
-                               .replace('Es wurde ein Update für Forumactif Edge gefunden. Wenn Sie bereit sind, gehen Sie bitte zu Ihrem FAE Bedienungsfeld und klicken Sie auf "Nach Updates überprüfen", um den Update-Prozess zu starten.', 'Es wurde ein Update für Forumactif Edge gefunden. Wenn Sie bereit sind, gehen Sie bitte zu Ihrem FAE-Bedienungsfeld und klicken Sie auf "Nach Updates überprüfen", um den Update-Prozess zu starten.'),
+                               .replace('Es wurde ein Update für Geek Fourm gefunden. Wenn Sie bereit sind, gehen Sie bitte zu Ihrem FAE Bedienungsfeld und klicken Sie auf "Nach Updates überprüfen", um den Update-Prozess zu starten.', 'Es wurde ein Update für Forumactif Edge gefunden. Wenn Sie bereit sind, gehen Sie bitte zu Ihrem FAE-Bedienungsfeld und klicken Sie auf "Nach Updates überprüfen", um den Update-Prozess zu starten.'),
 
                         mode : 'save',
                         page : form.page.value,
