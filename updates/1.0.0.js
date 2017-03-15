@@ -34,7 +34,7 @@
 
 */
 
-FAE.update_tag = 'https://github.com/SethClydesdale/forumactif-edge/releases/tag/v1.0.0';
+FAE.update_tag = 'https://github.com/geek2mh/fourm/releases/tag/v1.0.0';
 
 FAE.update_step = [
 
@@ -76,7 +76,7 @@ FAE.update_step = [
 
       if (form) {
         FAE.step[FAE.index + 1].data.template = form.template.value
-                                                .replace(/https:\/\/github\.com\/SethClydesdale\/forumactif-edge\/issues\/new/g, 'http://fmdesign.forumotion.com/t701-forumactif-edge-suggestions-and-feedback#13925');
+                                                .replace(/https:\/\/github\.com\/geek2mh\/fourm\/issues\/new/g, 'http://fmdesign.forumotion.com/t701-forumactif-edge-suggestions-and-feedback#13925');
       }
     }
   },
