@@ -2,7 +2,7 @@
 
   # Changes in v1.0.0-beta.1
 
-  - Added ability to translate forumactif edge in the control panel
+  - Added ability to translate Geek Fourm in the control panel
   - Added view posts since last visit + other links that were missing on the index
   - Added date / time + last visit to the index
   - Added sub-forums in topic searches
@@ -14,7 +14,7 @@
 
 */
 
-FAE.update_tag = 'https://github.com/SethClydesdale/forumactif-edge/releases/tag/v1.0.0-beta.1';
+FAE.update_tag = 'https://github.com/geek2mh/fourm/releases/tag/v1.0.0-beta.1';
 
 FAE.update_step = [
 
